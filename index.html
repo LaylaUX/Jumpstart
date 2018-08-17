@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!-- A responsive landing page for a fictional crowdfunding site, using Bootstrap, jQuery,
+the Slick carousel plugin, and css overrides. -->
+
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -36,48 +39,72 @@
       <a class="btn btn-primary btn-large" href="#">Jump in</a>
     </div>
 
-    <!-- Featured Product secion -->
+    <!-- Featured Product section -->
 
-    <div class="container-fluid">
+    <div class="container feature">
       <h2>Featured Product</h1>
       <div class="row">
-          <div class="image-container col-lg-6 col-sm-12">
-            <img src="resources/images/featured-project.png" alt="A farmhouse with snowy mountains in the background">
+          <img class="img-responsive col-lg-6 col-sm-12 image-zoom" src="resources/images/featured-project.png" alt="A farmhouse with snowy mountains in the background">
+          <div class="col-lg-3 col-sm-6">
+            <h3>DeFrost: A Documentary</h3>
+            <p>by Leo De Firenze</p>
+            <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley.
+              This is a story about my mother's childhood. This film attempts to capture vignettes of her
+              upbringing - her family, friends, pets, and eventual depature from a freezing valley in
+              Northern Italy - through beautiful cinematography and narration.</p>
           </div>
-        </div>
+          <div class="col-lg-3 col-sm-6">
+            <h3 class="categories">Product Categories</h3>
+            <ul>
+              <li>Art</li>
+              <li>Books</li>
+              <li>Crystals</li>
+              <li>Design</li>
+              <li>Doodles</li>
+              <li>Deedlybobs</li>
+              <li>Farming</li>
+              <li>Gadgets</li>
+              <li>Hoverboards</li>
+              <li>Jams, Jellies, Etc.</li>
+              <li>Magazines</li>
+              <li>Plants</li>
+              <li>Snakes & Snake Equipment</li>
+              <li>Tables</li>
+              <li>Ventriliquist Figures</li>
+              <li>Yoyos</li>
+            </ul>
+          </div>
+      </div>
+    </div>
 
-        <div class="col-lg-3 col-sm-6">
-          <h3>DeFrost: A Documentary</h3>
-          <p>by Leo De Firenze</p>
-          <p>DeFrost is a documentary about growing up in a little red house in a cold, harsh valley.
-            This is a story about my mother's childhood. This film attempts to capture vignettes of her
-            upbringing â€” her family, friends, pets, and eventual depature from a freezing valley in
-            Northern Italy â€” through beautiful cinematography and narration.</p>
-        </div>
+    <!-- Projects section -->
 
-        <div class="col-lg-3 col-sm-6">
-          <h3>Product Categories</h3>
-          <ul>
-            <li>Art</li>
-            <li>Books</li>
-            <li>Crystals</li>
-            <li>Design</li>
-            <li>Doodles</li>
-            <li>Deedlybobs</li>
-            <li>Farming</li>
-            <li>Gadgets</li>
-            <li>Hoverboards</li>
-            <li>Jams, Jellies, Etc.</li>
-            <li>Magazines</li>
-            <li>Plants</li>
-            <li>Snakes & Snake Equipment</li>
-            <li>Tables</li>
-            <li>Ventriliquist Figures</li>
-            <li>Yoyos</li>
-          </ul>
+    <div class="container projects">
+      <h2>Projects</h1>
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <img class="img-responsive image-zoom" src="resources/images/project1.png" alt="A young woman wearing black tights">
+          <h3>The Right Tights</h3>
+          <p>by Riley Mae</p>
+          <p>These tights are 50 denier, beautifully constructed, hand-dyed, and guaranteed to last (no more ladders!). Made with high quality, completely toxic-free materials. Custom colors available to all backers.</p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <img class="img-responsive image-zoom" src="resources/images/project2.png" alt="An elegant sitting room with toys in the corner">
+          <h3>Peppermint Smart Home</h3>
+          <p>by Brian McDonald</p>
+          <p>Instantly upgrade your home with technology that keeps your family and home safe. We've made Peppermint easy to use. Just talk to your phone and Peppermint will help you every step of the way.</p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <img class="img-responsive image-zoom" src="resources/images/project3.png" alt="The window of a modern building reflecting a neon sign">
+          <h3>American Streetlife</h3>
+          <p>by Patrick Wallace</p>
+          <p>I've been traveling around the United States for the past two years. I've slept on hundreds of couches, more than a few benches, and captured my experiences in this 120 page photo album.</p>
         </div>
       </div>
     </div>
+
+    <!-- Having trouble section -->
+
 
     <!-- JavaScript: jQuery, Slick, & main.js -->
     <script

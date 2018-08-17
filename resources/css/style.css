@@ -1,5 +1,7 @@
 /* Botstrap overrides */
 
+/* Universal styles */
+
 html {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
@@ -10,8 +12,19 @@ h1 {
   text-transform: uppercase;
 }
 
+h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: rgba(57, 155, 209, 1);
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
 .btn-primary {
-  background-color: #399bd1;
+  background-color: rgba(57, 155, 209, 1);
   box-shadow: 0 0 3px rgba(0,0,0,0.5);
   width: 11.4rem;
   padding-top: 1.3rem;
@@ -28,7 +41,7 @@ h1 {
   box-shadow: 0 0 0 rgba(0,0,0,0.5);
 }
 
-.image-container img {
+.img-responsive {
   opacity: 0.7;
 }
 
@@ -41,7 +54,7 @@ nav {
 
 .navbar-default .navbar-nav > .active > a:hover {
   background-color: inherit;
-  color: #399bd1;
+  color: rgba(57, 155, 209, 1);
 }
 
 /* Jumbotron Section */
@@ -61,7 +74,7 @@ nav {
 
 .jumbotron h1,
 .jumbotron p {
-  text-shadow: 1px 1px 1px #000;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
 }
 
 .jumbotron h1 {
@@ -78,4 +91,25 @@ nav {
 .jumbotron .btn-primary {
   margin-top: 2.8rem;
   margin-bottom: 11.85rem;
+}
+
+/* Featured product section */
+
+.feature h2 {
+  margin-bottom: 20px;
+}
+
+.categories {
+  color: rgba(57, 155, 209, 1);
+}
+
+.feature ul {
+  color: rgba(0,0,0,0.7);
+  line-height: 1.4;
+}
+
+/* Projects section */
+
+.projects {
+  padding-bottom: 5.85rem;
 }
