@@ -1,4 +1,4 @@
-/* Universal Styles */
+/* Botstrap overrides */
 
 html {
   font-size: 14px;
@@ -6,9 +6,30 @@ html {
 }
 
 h1 {
-  font-size: 7.1rem; /*???*/
   font-family: "Monoton", sans-serif;
   text-transform: uppercase;
+}
+
+.btn-primary {
+  background-color: #399bd1;
+  box-shadow: 0 0 3px rgba(0,0,0,0.5);
+  width: 11.4rem;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+  font-size: 1.3rem;
+  transition: all 175ms ease-in;
+}
+
+.btn-primary:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.9);
+}
+
+.btn-primary:active {
+  box-shadow: 0 0 0 rgba(0,0,0,0.5);
+}
+
+.image-container img {
+  opacity: 0.7;
 }
 
 /* Header section */
@@ -25,7 +46,36 @@ nav {
 
 /* Jumbotron Section */
 
+.jumbotron {
+    text-align: center;
+    color: white;
+    height: 625px;
+}
+
 .jumbotron-bike {
-  background-image: url("../images/jumbotron-bike.jpg");
-  color: white;
+  background: url("../images/jumbotron-bike.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron h1,
+.jumbotron p {
+  text-shadow: 1px 1px 1px #000;
+}
+
+.jumbotron h1 {
+  font-size: 7.1rem; /*???*/
+  margin-top: 11.85rem;
+}
+
+.jumbotron p {
+  width: 51.3rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.jumbotron .btn-primary {
+  margin-top: 2.8rem;
+  margin-bottom: 11.85rem;
 }
