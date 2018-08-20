@@ -13,14 +13,23 @@ h1 {
 }
 
 h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h3 {
   font-size: 1.7rem;
   font-weight: 700;
   color: rgba(57, 155, 209, 1);
 }
 
-h3 {
+h4 {
   font-size: 1.3rem;
   font-weight: 700;
+}
+
+p {
+  font-size: 1.05rem;
 }
 
 .btn-primary {
@@ -44,6 +53,7 @@ h3 {
 .img-responsive {
   opacity: 0.7;
 }
+
 
 /* Header section */
 
@@ -93,9 +103,15 @@ nav {
   margin-bottom: 11.85rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .jumbotron h1 {
+    font-size: 5.7rem;
+  }
+}
+
 /* Featured product section */
 
-.feature h2 {
+.feature h3 {
   margin-bottom: 20px;
 }
 
@@ -112,4 +128,43 @@ nav {
 
 .projects {
   padding-bottom: 5.85rem;
+}
+
+.projects img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .top-margin {
+    margin-top: 5.8rem;
+  }
+}
+
+/* Having trouble section */
+
+footer {
+  text-align: center;
+  background-color: rgba(243, 243, 243, 1);
+}
+
+.having-trouble {
+  padding-top: 5.2rem;
+  padding-bottom: 5.2rem;
+}
+
+.having-trouble h2 {
+  padding: 0;
+  margin: 0;
+}
+
+#GIGLi {
+  width: 42rem;
+  margin: 0 auto;
+  padding: 1.4rem 0 2.8rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  #GIGLi {
+  width: 100%;
+  }
 }
