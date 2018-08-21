@@ -19,8 +19,7 @@ $(document).ready(function(){
     var navHeight = $('.navbar').css('height');
       $('.navbar').animate({top: '-' + navHeight}, 150);
       prev = scrollTop;
-    }
-    if (prev - scrollTop > 50) {
+    } else if (prev - scrollTop > 50) {
       $('.navbar').animate({top: 0}, 150);
       prev = scrollTop;
     }
