@@ -8,4 +8,21 @@ $(document).ready(function(){
     pauseOnFocus: false,
     pauseOnHover: false
   });
+
+  var prev = 0;
+  var $window = $(window);
+  var nav = $('.navbar');
+
+  $window.on('scroll', function(){
+    var scrollTop = $(this).scrollTop();
+    if (scrollTop - prev > 50) {
+    var navHeight = $('.navbar').css('height');
+      $('.navbar').animate({top: '-' + navHeight}, 150);
+      prev = scrollTop;
+    }
+    if (prev - scrollTop > 50) {
+      $('.navbar').animate({top: 0}, 150);
+      prev = scrollTop;
+    }
+  });
 });
